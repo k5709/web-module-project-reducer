@@ -5,6 +5,7 @@ export const CHANGE_OPERATION = "CHANGE_OPERATION";
 export const CLEAR_DISPLAY = "CLEAR_DISPLAY"
 export const MEMORY_TOTOTAL = "MEMORY_TOTOTAL"
 export const MEMORY_TOZERO = "MEMORY_TOZERO"
+export const MEMORY_CURRENT = "MEMORY_CURRENT"
 
 export const addOne = () => {
     return ({ type: ADD_ONE });
@@ -24,4 +25,7 @@ export const memoryToTotal = () => {
 }
 export const memoryToZero = () => {
     return ({ type: MEMORY_TOZERO })
+}
+export const memoryCurrent = () => {
+    return ({ type: MEMORY_CURRENT })
 }

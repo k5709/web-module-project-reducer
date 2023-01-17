@@ -3,7 +3,7 @@ import { useReducer, useState } from 'react';
 import reducer from '../reducers';
 import { initialState } from '../reducers';
 
-import { addOne, applyNumber, APPLY_NUMBER, CHANGE_OPERATION, changeOperation, clearDisplay, CLEAR_DISPLAY, memoryToTotal, memoryToZero } from '../actions';
+import { addOne, applyNumber, APPLY_NUMBER, CHANGE_OPERATION, changeOperation, clearDisplay, CLEAR_DISPLAY, memoryToTotal, memoryToZero, memoryCurrent } from '../actions';
 
 import './App.css';
 
@@ -41,7 +41,8 @@ function App() {
   }
 
   const MR = () => {
-    dispatch()
+    dispatch(memoryCurrent())
+    return MR
   }
 
   return (
